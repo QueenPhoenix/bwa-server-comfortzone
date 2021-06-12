@@ -2,7 +2,7 @@ var seeder = require('mongoose-seed');
 var mongoose = require('mongoose');
 
 // Connect to MongoDB via Mongoose
-seeder.connect('mongodb://127.0.0.1:27017/db_comfortzone', {
+seeder.connect('mongodb://comfortzone:bwamern@cluster0-shard-00-00.u2jor.mongodb.net:27017,cluster0-shard-00-01.u2jor.mongodb.net:27017,cluster0-shard-00-02.u2jor.mongodb.net:27017/db_comfortzone?ssl=true&replicaSet=atlas-11j0oi-shard-0&authSource=admin&retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useCreateIndex: true,
   useFindAndModify: true,
