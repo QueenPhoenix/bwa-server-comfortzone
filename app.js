@@ -45,10 +45,11 @@ app.use('/sb-admin-2', express.static(path.join(__dirname, 'node_modules/startbo
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use(cors());
 // admin
 app.use('/admin', adminRouter);
 app.use('/api/v1/member', apiRouter);
-app.use('cors', cors);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
